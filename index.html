@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Complete Responsive Pet Food Website Design Tutorial</title>
+    <title>Pet Shop</title>
 
     <!-- font awesome cdn link  -->
     <link
@@ -16,13 +16,19 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="modal-wrapper hidden" id="modalWrapper">
+      <div class="modal-container" id="modalContainer">
+        <div class="modal-box" id="modalBox"></div>
+      </div>
+    </div>
+
     <!-- header section starts  -->
 
     <header class="header">
-      <a href="#" class="logo"> <i class="fas fa-paw"></i> shop </a>
+      <a href="./index.html" class="logo"> <i class="fas fa-paw"></i> shop </a>
 
       <nav class="navbar">
-        <a href="#home">home</a>
+        <a href="./index.html">home</a>
         <a href="#about">about</a>
         <a href="#shop">shop</a>
         <a href="#services">services</a>
@@ -32,7 +38,7 @@
 
       <div class="icons">
         <div class="fas fa-bars" id="menu-btn"></div>
-        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="./cart.html" class="fas fa-shopping-cart"></a>
         <div class="fas fa-user" id="login-btn"></div>
       </div>
 
@@ -42,14 +48,12 @@
           type="email"
           name=""
           placeholder="enter your email"
-          id=""
           class="box"
         />
         <input
           type="password"
           name=""
           placeholder="enter your password"
-          id=""
           class="box"
         />
         <div class="remember">
@@ -58,8 +62,8 @@
         </div>
         <input type="submit" value="sign in" class="btn" />
         <div class="links">
-          <a href="#">forget password</a>
-          <a href="#">sign up</a>
+          <a href="">forget password</a>
+          <a href="">sign up</a>
         </div>
       </form>
     </header>
@@ -71,10 +75,10 @@
     <section class="home" id="home">
       <div class="content">
         <h3><span>hi</span> welcome to our pet shop</h3>
-        <a href="#" class="btn">shop now</a>
+        <a href="#shop" class="btn">shop now</a>
       </div>
 
-      <img src="image/bottom_wave.png" class="wave" alt="" />
+      <img src="image/black_wave_1.png" class="wave" alt="" />
     </section>
 
     <!-- home section ends -->
@@ -93,7 +97,7 @@
           sint, dolore perspiciatis iure consequuntur eligendi quaerat vitae
           shaikh anas.
         </p>
-        <a href="#" class="btn">read more</a>
+        <a href="" class="btn">read more</a>
       </div>
     </section>
 
@@ -113,7 +117,7 @@
           illo, repudiandae rem porro sunt.
         </p>
         <div class="amount">$15.00 - $30.00</div>
-        <a href="#"> <img src="image/shop_now_dog.png" alt="" /> </a>
+        <a href=""> <img src="image/shop_now_dog.png" alt="" /> </a>
       </div>
     </div>
 
@@ -125,7 +129,7 @@
           illo, repudiandae rem porro sunt.
         </p>
         <div class="amount">$15.00 - $30.00</div>
-        <a href="#"> <img src="image/shop_now_cat.png" alt="" /> </a>
+        <a href=""> <img src="image/shop_now_cat.png" alt="" /> </a>
       </div>
 
       <div class="image">
@@ -143,9 +147,14 @@
       <div class="box-container">
         <div class="box">
           <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
+            <a href="./cart.html" class="fas fa-shopping-cart"></a>
+            <a href="javascript:void(0)" class="fas fa-heart"></a>
+            <a
+              target="_blank"
+              href="javascript:void(0)"
+              class="fas fa-eye eye-btn"
+              data-img="product_01.jpg"
+            ></a>
           </div>
           <div class="image">
             <img src="image/product_01.jpg" alt="" />
@@ -158,9 +167,14 @@
 
         <div class="box">
           <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
+            <a href="./cart.html" class="fas fa-shopping-cart"></a>
+            <a href="javascript:void(0)" class="fas fa-heart"></a>
+            <a
+              target="_blank"
+              href="javascript:void(0)"
+              class="fas fa-eye eye-btn"
+              data-img="product_02.jpg"
+            ></a>
           </div>
           <div class="image">
             <img src="image/product_02.jpg" alt="" />
@@ -173,9 +187,14 @@
 
         <div class="box">
           <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
+            <a href="./cart.html" class="fas fa-shopping-cart"></a>
+            <a href="javascript:void(0)" class="fas fa-heart"></a>
+            <a
+              target="_blank"
+              href="javascript:void(0)"
+              class="fas fa-eye eye-btn"
+              data-img="product_03.jpg"
+            ></a>
           </div>
           <div class="image">
             <img src="image/product_03.jpg" alt="" />
@@ -188,9 +207,14 @@
 
         <div class="box">
           <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
+            <a href="./cart.html" class="fas fa-shopping-cart"></a>
+            <a href="javascript:void(0)" class="fas fa-heart"></a>
+            <a
+              target="_blank"
+              href="javascript:void(0)"
+              class="fas fa-eye eye-btn"
+              data-img="product_04.jpg"
+            ></a>
           </div>
           <div class="image">
             <img src="image/product_04.jpg" alt="" />
@@ -203,9 +227,14 @@
 
         <div class="box">
           <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
+            <a href="./cart.html" class="fas fa-shopping-cart"></a>
+            <a href="javascript:void(0)" class="fas fa-heart"></a>
+            <a
+              target="_blank"
+              href="javascript:void(0)"
+              class="fas fa-eye eye-btn"
+              data-img="product_05.jpg"
+            ></a>
           </div>
           <div class="image">
             <img src="image/product_05.jpg" alt="" />
@@ -218,9 +247,14 @@
 
         <div class="box">
           <div class="icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-eye"></a>
+            <a href="./cart.html" class="fas fa-shopping-cart"></a>
+            <a href="javascript:void(0)" class="fas fa-heart"></a>
+            <a
+              target="_blank"
+              href="javascript:void(0)"
+              class="fas fa-eye eye-btn"
+              data-img="product_06.jpg"
+            ></a>
           </div>
           <div class="image">
             <img src="image/product_06.jpg" alt="" />
@@ -244,37 +278,67 @@
         <div class="box">
           <i class="fas fa-dog"></i>
           <h3>dog boarding</h3>
-          <a href="#" class="btn">read more</a>
+          <a
+            href="javascript:void(0)"
+            class="btn read-more-btn"
+            data-title="Dog Boarding"
+            >read more</a
+          >
         </div>
 
         <div class="box">
           <i class="fas fa-cat"></i>
           <h3>cat boarding</h3>
-          <a href="#" class="btn">read more</a>
+          <a
+            href="javascript:void(0)"
+            class="btn read-more-btn"
+            data-title="Cat Boarding"
+            >read more</a
+          >
         </div>
 
         <div class="box">
           <i class="fas fa-bath"></i>
           <h3>spa & grooming</h3>
-          <a href="#" class="btn">read more</a>
+          <a
+            href="javascript:void(0)"
+            class="btn read-more-btn"
+            data-title="Spa & Grooming"
+            >read more</a
+          >
         </div>
 
         <div class="box">
           <i class="fas fa-drumstick-bite"></i>
           <h3>healthy meal</h3>
-          <a href="#" class="btn">read more</a>
+          <a
+            href="javascript:void(0)"
+            class="btn read-more-btn"
+            data-title="Healthy Meal"
+            >read more</a
+          >
         </div>
 
         <div class="box">
           <i class="fas fa-baseball-ball"></i>
           <h3>activity exercise</h3>
-          <a href="#" class="btn">read more</a>
+          <a
+            href="javascript:void(0)"
+            class="btn read-more-btn"
+            data-title="Activity Exercise"
+            >read more</a
+          >
         </div>
 
         <div class="box">
           <i class="fas fa-heartbeat"></i>
           <h3>health care</h3>
-          <a href="#" class="btn">read more</a>
+          <a
+            href="javascript:void(0)"
+            class="btn read-more-btn"
+            data-title="Health Care"
+            >read more</a
+          >
         </div>
       </div>
     </section>
@@ -298,7 +362,14 @@
             <p>pet meals <span class="fas fa-check"></span></p>
           </div>
           <div class="amount"><span>$</span>50</div>
-          <a href="#" class="btn"> choose plan </a>
+          <a
+            href="javascript:void(0)"
+            class="btn choose-plan-btn"
+            data-days="1"
+            data-cost="50"
+          >
+            choose plan
+          </a>
         </div>
 
         <div class="box">
@@ -312,7 +383,14 @@
             <p>pet meals <span class="fas fa-check"></span></p>
           </div>
           <div class="amount"><span>$</span>350</div>
-          <a href="#" class="btn"> choose plan </a>
+          <a
+            href="javascript:void(0)"
+            class="btn choose-plan-btn"
+            data-days="10"
+            data-cost="350"
+          >
+            choose plan
+          </a>
         </div>
 
         <div class="box">
@@ -326,7 +404,14 @@
             <p>pet meals <span class="fas fa-check"></span></p>
           </div>
           <div class="amount"><span>$</span>650</div>
-          <a href="#" class="btn"> choose plan </a>
+          <a
+            href="javascript:void(0)"
+            class="btn choose-plan-btn"
+            data-days="30"
+            data-cost="650"
+          >
+            choose plan
+          </a>
         </div>
       </div>
     </section>
@@ -338,31 +423,40 @@
         <img src="image/contact_img.png" alt="" />
       </div>
 
-      <form action="">
+      <form action="" id="contactForm">
         <h3>contact us</h3>
-        <input type="text" placeholder="your name" class="box" />
-        <input type="email" placeholder="your email" class="box" />
-        <input type="tumber" placeholder="your number" class="box" />
+        <input type="text" placeholder="Name" class="box" id="nameInput" />
+        <input type="email" placeholder="Email" class="box" id="emailInput" />
+        <input
+          type="text"
+          placeholder="Contact No (+61)"
+          class="box"
+          id="contactInput"
+        />
+        <input type="text" placeholder="Age" class="box" id="ageInput" />
         <textarea
           name=""
-          placeholder="your message"
-          id=""
+          placeholder="Message"
           cols="30"
           rows="10"
+          id="messageInput"
         ></textarea>
+        <div class="error-box hidden" id="errorBox">
+          <p id="errorText"></p>
+        </div>
         <input type="submit" value="send message" class="btn" />
       </form>
     </section>
 
     <section class="footer">
-      <img src="image/top_wave.png" alt="" />
+      <img src="image/black_wave_2.png" alt="" />
 
       <div class="share">
-        <a href="#" class="btn"> <i class="fab fa-facebook-f"></i> facebook </a>
-        <a href="#" class="btn"> <i class="fab fa-twitter"></i> twitter </a>
-        <a href="#" class="btn"> <i class="fab fa-instagram"></i> instagram </a>
-        <a href="#" class="btn"> <i class="fab fa-linkedin"></i> linkedin </a>
-        <a href="#" class="btn"> <i class="fab fa-pinterest"></i> pinterest </a>
+        <a href="" class="btn"> <i class="fab fa-facebook-f"></i> facebook </a>
+        <a href="" class="btn"> <i class="fab fa-twitter"></i> twitter </a>
+        <a href="" class="btn"> <i class="fab fa-instagram"></i> instagram </a>
+        <a href="" class="btn"> <i class="fab fa-linkedin"></i> linkedin </a>
+        <a href="" class="btn"> <i class="fab fa-pinterest"></i> pinterest </a>
       </div>
 
       <div class="credit">
@@ -372,5 +466,6 @@
 
     <!-- custom js file link  -->
     <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>

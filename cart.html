@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Shop</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+  </head>
+  <body>
+    <div class="modal-wrapper hidden" id="modalWrapper">
+      <div class="modal-container" id="modalContainer">
+        <div class="modal-box" id="modalBox"></div>
+      </div>
+    </div>
+
+    <!-- header section starts  -->
+    <header class="header force-active">
+      <a href="./index.html" class="logo"> <i class="fas fa-paw"></i> shop </a>
+
+      <nav class="navbar">
+        <a href="./index.html">home</a>
+        <a href="./index.html#about">about</a>
+        <a href="./index.html#shop">shop</a>
+        <a href="./index.html#services">services</a>
+        <a href="./index.html#plan">plan</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <a href="./cart.html" class="fas fa-shopping-cart"></a>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+
+      <form action="" class="login-form">
+        <h3>sign in</h3>
+        <input
+          type="email"
+          name=""
+          placeholder="enter your email"
+          id=""
+          class="box"
+        />
+        <input
+          type="password"
+          name=""
+          placeholder="enter your password"
+          id=""
+          class="box"
+        />
+        <div class="remember">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me">remember me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn" />
+        <div class="links">
+          <a href="#">forget password</a>
+          <a href="#">sign up</a>
+        </div>
+      </form>
+    </header>
+    <!-- header section ends -->
+
+    <!-- cart container  -->
+    <section class="cart-container">
+      <div class="left-box">
+        <div class="title">
+          <h1>Shopping Cart</h1>
+          <p>1 Item</p>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>PRODUCT DETAILS</th>
+              <th>QUANTITY</th>
+              <th>PRICE</th>
+              <th>TOTAL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="product-td">
+                <div class="product-box">
+                  <div class="img-box">
+                    <img src="./image/product_01.jpg" alt="food" />
+                  </div>
+                  <div class="info-box">
+                    <h1>Air-Dried Food</h1>
+                    <p>Dog Food</p>
+                    <a>Remove</a>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="counter-box">
+                  <p>-</p>
+                  <h6>2</h6>
+                  <p>+</p>
+                </div>
+              </td>
+              <td>$100</td>
+              <td>$200</td>
+            </tr>
+            <tr>
+              <td class="product-td">
+                <div class="product-box">
+                  <div class="img-box">
+                    <img src="./image/product_01.jpg" alt="food" />
+                  </div>
+                  <div class="info-box">
+                    <h1>Air-Dried Food</h1>
+                    <p>Dog Food</p>
+                    <a>Remove</a>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="counter-box">
+                  <p>-</p>
+                  <h6>2</h6>
+                  <p>+</p>
+                </div>
+              </td>
+              <td>$100</td>
+              <td>$200</td>
+            </tr>
+            <tr>
+              <td class="product-td">
+                <div class="product-box">
+                  <div class="img-box">
+                    <img src="./image/product_01.jpg" alt="food" />
+                  </div>
+                  <div class="info-box">
+                    <h1>Air-Dried Food</h1>
+                    <p>Dog Food</p>
+                    <a>Remove</a>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="counter-box">
+                  <p>-</p>
+                  <h6>2</h6>
+                  <p>+</p>
+                </div>
+              </td>
+              <td>$100</td>
+              <td>$200</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="right-box">
+        <div class="title">
+          <h1>Order Summary</h1>
+        </div>
+        <div class="info">
+          <div class="list">
+            <h1>ITEM 1</h1>
+            <p>200$</p>
+          </div>
+          <div class="list">
+            <h1>ITEM 2</h1>
+            <p>200$</p>
+          </div>
+          <div class="list">
+            <h1>ITEM 3</h1>
+            <p>200$</p>
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="shipping">SHIPPING</label> <br />
+          <input type="text" value="Shipping Cost - $10" disabled />
+        </div>
+        <div class="total-box">
+          <div class="title">
+            <h1>Total</h1>
+            <p>$610</p>
+          </div>
+          <button id="orderBtn">Order Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- plan section ends -->
+
+    <section class="contact" id="contact">
+      <div class="image">
+        <img src="image/contact_img.png" alt="" />
+      </div>
+
+      <form action="" id="contactForm">
+        <h3>contact us</h3>
+        <input type="text" placeholder="Name" class="box" id="nameInput" />
+        <input type="email" placeholder="Email" class="box" id="emailInput" />
+        <input
+          type="text"
+          placeholder="Contact No (+61)"
+          class="box"
+          id="contactInput"
+        />
+        <input type="text" placeholder="Age" class="box" id="ageInput" />
+        <textarea
+          name=""
+          placeholder="Message"
+          cols="30"
+          rows="10"
+          id="messageInput"
+        ></textarea>
+        <div class="error-box hidden" id="errorBox">
+          <p id="errorText"></p>
+        </div>
+        <input type="submit" value="send message" class="btn" />
+      </form>
+    </section>
+
+    <section class="footer">
+      <img src="image/black_wave_2.png" alt="" />
+
+      <div class="share">
+        <a href="#" class="btn"> <i class="fab fa-facebook-f"></i> facebook </a>
+        <a href="#" class="btn"> <i class="fab fa-twitter"></i> twitter </a>
+        <a href="#" class="btn"> <i class="fab fa-instagram"></i> instagram </a>
+        <a href="#" class="btn"> <i class="fab fa-linkedin"></i> linkedin </a>
+        <a href="#" class="btn"> <i class="fab fa-pinterest"></i> pinterest </a>
+      </div>
+
+      <div class="credit">
+        created by <span> Sakar Regmi </span> | all rights reserved!
+      </div>
+    </section>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>
