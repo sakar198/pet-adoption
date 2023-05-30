@@ -105,12 +105,3 @@ contactForm.addEventListener("submit", function (e) {
   modalWrapper.classList.remove("hidden");
   modalBox.innerHTML = thankYouHTML(getData);
 });
-
-modalWrapper.addEventListener("click", function (e) {
-  const elId = e.target.id;
-
-  if (elId === "modalContainer") {
-    modalBox.innerHTML = "";
-    modalWrapper.classList.add("hidden");
-  }
-});

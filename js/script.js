@@ -188,3 +188,12 @@ function triggerPlan() {
     );
   });
 }
+
+modalWrapper.addEventListener("click", function (e) {
+  const elId = e.target.id;
+
+  if (elId === "modalContainer") {
+    modalBox.innerHTML = "";
+    modalWrapper.classList.add("hidden");
+  }
+});

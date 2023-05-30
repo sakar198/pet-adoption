@@ -973,6 +973,10 @@ section {
   -o-border-radius: 6px;
 }
 
+#shadow-host-companion {
+  padding: 0;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
