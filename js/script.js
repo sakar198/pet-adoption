@@ -69,8 +69,9 @@ function serviceModalHTML(title) {
               </p>
             </div>
             <div class="input-box">
+              <small style="font-size: 10px; padding-bottom: 8px;">Valid mobile number required.</small>
               <input type="text" id="interestInput" placeholder="Your Mobile Number" />
-            </div>
+              </div>
             <div class="btn-box">
               <button id="interestBtn">I am Interested</button>
             </div>
@@ -88,6 +89,7 @@ function planModalHTML(days, cost) {
               <h1>Cost: $${cost}</h1>
             </div>
             <div class="input-box">
+              <small style="font-size: 10px; padding-bottom: 8px;">Valid mobile number required.</small>
               <input type="text" id="planInput" placeholder="Your Mobile Number" />
             </div>
             <div class="btn-box">
@@ -132,6 +134,16 @@ function triggerInterest() {
       return false;
     }
 
+    if (/[a-zA-Z]/.test(interestInput.value)) {
+      interestInput.classList.add("error");
+      return false;
+    }
+
+    if (interestInput.value.trim().length !== 10) {
+      interestInput.classList.add("error");
+      return false;
+    }
+
     interestInput.classList.remove("error");
 
     modalBox.innerHTML = "";
@@ -170,6 +182,16 @@ function triggerPlan() {
   planBtn.addEventListener("click", function (e) {
     e.preventDefault();
     if (planInput.value.trim() === "") {
+      planInput.classList.add("error");
+      return false;
+    }
+
+    if (/[a-zA-Z]/.test(interestInput.value)) {
+      planInput.classList.add("error");
+      return false;
+    }
+
+    if (interestInput.value.trim().length !== 10) {
       planInput.classList.add("error");
       return false;
     }
