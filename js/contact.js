@@ -63,7 +63,7 @@ contactForm.addEventListener("submit", function (e) {
     return false;
   }
 
-  if (/[a-zA-Z]/.test(contactInputField.value)) {
+  if (/[a-zA-Z]/.test(contactInput.value)) {
     errorText.innerText = "Please enter only numeric value for contact !";
     errorBox.classList.remove("hidden");
     return false;
@@ -75,7 +75,7 @@ contactForm.addEventListener("submit", function (e) {
     return false;
   }
 
-  if (/[a-zA-Z]/.test(ageInputField.value)) {
+  if (/[a-zA-Z]/.test(ageInput.value)) {
     errorText.innerText = "Please enter only numeric value for age !";
     errorBox.classList.remove("hidden");
     return false;
