@@ -186,12 +186,12 @@ function triggerPlan() {
       return false;
     }
 
-    if (/[a-zA-Z]/.test(interestInput.value)) {
+    if (/[a-zA-Z]/.test(planInput.value)) {
       planInput.classList.add("error");
       return false;
     }
 
-    if (interestInput.value.trim().length !== 10) {
+    if (planInput.value.trim().length !== 10) {
       planInput.classList.add("error");
       return false;
     }
