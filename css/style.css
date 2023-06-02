@@ -801,6 +801,17 @@ section {
   pointer-events: none;
 }
 
+.thankyou-modal .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.thankyou-modal .title img {
+  height: 110px;
+}
+
 .thankyou-modal .title h1 {
   font-size: 30px;
   font-weight: 600;

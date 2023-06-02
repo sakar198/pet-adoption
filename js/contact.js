@@ -19,8 +19,8 @@ function thankYouHTML(data) {
   return `
   <div class="thankyou-modal">
   <div class="title">
-    <h1>Thank You</h1>
-    <p>"${data.name}"</p>
+  <img src="image/thankyou.png" />
+  <p>"${data.name}"</p>
   </div>
   <div class="subtitle">
     <h1>Your Information</h1>
